@@ -1,0 +1,24 @@
+<label><input type='radio' name="formType" value="Sire" data-bind="ckecked: typeOfForm">Sire</label>
+<label><input type="radio" name="formType" value="Dam" data-bind="checked: typeOfForm"/>Dam</label>
+<label><input type="radio" name="formType" value="Kennel" data-bind="checked: typeOfForm">Kennel</label>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>ID</th>
+      <th>Titles</th>
+    </tr>
+  </thead>
+  <tbody data-bind="foreach: users">
+    <tr>
+      <td><input data-bind="value: name"/></td>
+      <td><input data-bind="value: gender"/></td>
+      <td><input data-bind="value: id"/></td>
+      <td><input data-bind="value: titles"/></td>
+    </tr>
+  </tbody>
+</table>
+
+<button data-bind="click: showErrors">show Errors</button>
